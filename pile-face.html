@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// generer un nombre aleatoire avec Math.round()
+        const nbraleatoire =Math.round(Math.random() * 100);
+        console.log(nbraleatoire);
+// verifions si le nombre aleatoire est inferieur à 0.5 et affichons "pile ou face"
+    if (nbraleatoire < 0.5){
+        console.log("pile");
+    }        
+    else {
+        console.log("face");
+    }
+    //enregistrer le resultat dans une variable appelée 'resultat'
+    let resultat;
+
+    if (nbraleatoire < 0.5){
+        resultat ="pile";
+    }        
+    else {
+        resultat = "face";
+    }
+    console.log(resultat);
+//Creer une variable appele "deviner" pour enregistrez votre prediction et afficher
+// si vous avez gagné ou perdu
+let deviner = "pile";
+if (nbraleatoire < 0.5) {
+    resultat ="pile";
+} 
+else {
+    resultat ="face";
+}
+if (deviner === resultat){
+    console.log("vous gagner !")
+}
+else {
+    console.log("vous perdez !")
+}
+    </script>
+</body>
+</html>
